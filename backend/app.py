@@ -1,4 +1,5 @@
 from datetime import datetime
+from distutils.log import debug
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 app = Flask(__name__)
 
@@ -26,4 +27,4 @@ def hello():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=True)
