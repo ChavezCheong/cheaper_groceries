@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd backend && source env/bin/activate && flask run --no-debugger",
+    "start-api": "cd backend && source hackduke2022/bin/activate && flask run --no-debugger",
     "build": "react-scripts build",
     "test-api": "cd api && flask test",
     "test": "react-scripts test",
