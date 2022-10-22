@@ -2,9 +2,9 @@ from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 app = Flask(__name__)
 
-#Harris Teeter (https://www.harristeeter.com/pl/all/00?fulfillment=all) .kds-Price-promotional--decorated
-#Whole Foods (https://www.wholefoodsmarket.com/products/all-products) .sale_price (if sale) .b (if no sale)
-#
+#Harris Teeter (https://www.harristeeter.com/pl/all/00?fulfillment=all) Name = .my-8 ; Price = .kds-Price-promotional--decorated
+#Whole Foods (https://www.wholefoodsmarket.com/products/all-products) Name = .w-cms--font-body__sans-bold ; Price = .sale_price (if sale) .b (if no sale)
+#Food Lion (https://shop.foodlion.com/) Name = .css-f85de ; Price = 1) .css-coqxwd  or 2) .css-1x3un8e
 @app.route('/')
 def index():
    print('Request for index page received')
